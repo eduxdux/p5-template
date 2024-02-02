@@ -1,27 +1,19 @@
 html,
 body {
   height: 100%;
-}
-
-body {
-  overflow: hidden;
-  padding: 0;
+  min-height: 100%;
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 0;
 }
 
-#mainCanvas {
+canvas {
   position: absolute;
-  z-index: 0;
-  margin: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: transparent;
-}
-
-#p5_loading {
-  display: none;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: scale-down;
+  filter: drop-shadow(0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.43));
+  z-index: 100;
 }
